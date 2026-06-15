@@ -1,11 +1,11 @@
 {
 	"schemaVersion": 1,
-	"id": "examplemod",
+	"id": "treecaxe",
 	"version": "${version}",
-	"name": "Example Mod",
-	"description": "This mod aims to help new BTA modders.",
+	"name": "Treecapitator Axe",
+	"description": "This mod adds an axe that functions like treecapitator.",
 	"authors": [
-		"Turnip Labs"
+		"Ashy"
 	],
 	"contact": {
 		"homepage": "",
@@ -16,16 +16,19 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"turniplabs.examplemod.ExampleMod"
+			"ashy.treecaxe.Treecaxe"
 		],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"ashy.treecaxe.Treecaxe"
+		],
+		"initModels": [
+			"ashy.treecaxe.TreecaxeModels"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"ashy.treecaxe.Treecaxe"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"ashy.treecaxe.Treecaxe"
 		]
 	},
 	"mixins": [
