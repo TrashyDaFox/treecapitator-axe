@@ -8,9 +8,16 @@ import net.minecraft.core.item.tool.ItemToolAxe;
 import net.minecraft.core.util.helper.Side;
 import net.minecraft.core.world.World;
 
+
 public class TreecapitatorAxe extends ItemToolAxe {
+	public static final ToolMaterial TREECAPITATOR_STEEL = new ToolMaterial()
+		.setDurability(450)
+		.setMiningLevel(3)
+		.setEfficiency(4.0F, 10.0F)
+		.setDamage(1);
+
 	public TreecapitatorAxe(String translationKey, String namespaceId, int itemId) {
-		super(translationKey, namespaceId, itemId, ToolMaterial.steel);
+		super(translationKey, namespaceId, itemId, TREECAPITATOR_STEEL);
 	}
 
 	@Override

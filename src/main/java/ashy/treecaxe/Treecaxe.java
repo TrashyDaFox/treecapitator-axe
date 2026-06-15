@@ -46,8 +46,9 @@ public class Treecaxe implements ModInitializer, RecipeEntrypoint, GameStartEntr
 	public void onRecipesReady() {
 		ItemStack treecaxeResult = new ItemStack(TreecaxeItem, 1, 0);
 		RecipeBuilder.Shaped("treecaxe")
-			.setShape("LLL", "LAL", "LLL")
+			.setShape("CLC", "CAC", "CLC")
 			.addInput('L', Blocks.LOG_OAK)
+			.addInput('C', Items.NETHERCOAL)
 			.addInput('A', Items.TOOL_AXE_STEEL)
 			.create("treecaxe", treecaxeResult);
 	}
